@@ -3,5 +3,9 @@
 {% block title %}Dashboard{% endblock %}
 {% block content %}
     <h2>Dashboard</h2>
+    <h3>Welcome to your Dashboard</h3>
     {{ name }}
+    <div class="alert alert-success" role="alert">
+      You are logged in! Your user ID is: <strong>{{ user_id }}</strong>
+    </div>
 {% endblock %}

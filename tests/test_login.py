@@ -2,7 +2,7 @@
 from flask import url_for
 import pytest
 
-from application.database import User
+from application.database.models import User
 from application import init_app,db
 
 @pytest.fixture(name="app")

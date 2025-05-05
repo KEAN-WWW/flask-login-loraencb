@@ -1,11 +1,13 @@
 {% extends "base.html" %}
-    {% from 'bootstrap5/form.html' import render_form, render_field, render_form_row %}
+{% from 'bootstrap5/form.html' import render_form, render_field, render_form_row %}
+{% from 'bootstrap5/utils.html' import render_messages %}
 
 {% block title %}Login{% endblock %}
+
 {% block content %}
+  <h1>Login Form</h1>
 
-<h1>Login Form</h1>
-
-    {{ render_form(form) }}
+  {{ render_messages() }}
+  {{ render_form(form) }}
 
 {% endblock %}
